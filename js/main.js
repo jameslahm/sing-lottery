@@ -45,7 +45,6 @@ function calcPrimes() {
 	if (mode == 1) {
 		work = setInterval(function () {
 			c = Math.floor(Math.random() * 6);
-			displayList(nList, c)
 
 			for (let i = 0; i < 5; i++) {
 				n = Math.floor(Math.random() * UpBound) + 1;
@@ -54,17 +53,20 @@ function calcPrimes() {
 				}
 				nList[i] = n;
 			}
+
+			displayList(nList, c)
 		}, 75);
 	}
 	else {
 		work = setInterval(function () {
 			c = Math.floor(Math.random() * 6);
-			display(n, c, $($displayList[2]))
 
 			n = Math.floor(Math.random() * UpBound) + 1;
 			while (selected.indexOf(n) != -1) {
 				n = Math.floor(Math.random() * UpBound) + 1;
 			}
+
+			display(n, c, $($displayList[2]))
 		}, 75);
 	}
 }
@@ -90,7 +92,6 @@ function pauseScroll() {
 
 document.onkeyup = function (e) {
 	var code = e.charCode || e.keyCode;
-	console.log(code)
 	if (code === 13) {
 		if (paused) {
 			if (selected.length == UpBound) {
@@ -102,7 +103,13 @@ document.onkeyup = function (e) {
 		} else {
 			pauseScroll();
 			pauseWork();
-			selected.push(n);
+			if (mode == 1) {
+				selected.push(...nList);
+			}
+			else {
+				selected.push(n);
+			}
+			console.log(selected);
 		}
 		paused = !paused;
 	}
