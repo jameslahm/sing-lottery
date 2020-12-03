@@ -116,9 +116,17 @@ document.onkeyup = function (e) {
 	if (code === 32) {
 		if (mode === 1) {
 			mode = 2;
+			$($displayList[0]).hide()
+			$($displayList[1]).hide()
+			$($displayList[3]).hide()
+			$($displayList[4]).hide()
 		}
 		else {
 			mode = 1;
+			$($displayList[0]).show()
+			$($displayList[1]).show()
+			$($displayList[3]).show()
+			$($displayList[4]).show()
 		}
 	}
 };
