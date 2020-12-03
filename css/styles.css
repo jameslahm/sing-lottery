@@ -36,7 +36,7 @@ h1 {
 }
 
 .display {
-  font-size: 13em;
+  font-size: 11em;
   font-weight: 900;
   text-align: center;
   line-height: 1;
@@ -51,8 +51,42 @@ h1 {
   opacity: 0.5;
 }
 
+.display-1 {
+  left: -10%;
+  top: 20%;
+  right:50%;
+}
+
+
+.display-2 {
+  left: 50%;
+  top: 20%;
+  right:-10%;
+}
+
+
+.display-3 {
+  left: 20%;
+  top: 40%;
+  right:20%;
+}
+
+
+.display-4 {
+  left: -10%;
+  top: 60%;
+  right:50%;
+}
+
+
+.display-5 {
+  left: 50%;
+  top: 60%;
+  right:-10%;
+}
+
 .display:not(.prime){
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(0px);
   opacity: 0.9;
 }
 
