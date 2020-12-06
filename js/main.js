@@ -120,6 +120,7 @@ document.onkeyup = function (e) {
 			$($displayList[1]).hide()
 			$($displayList[3]).hide()
 			$($displayList[4]).hide()
+			$(".qrcode").show()
 		}
 		else {
 			mode = 1;
@@ -127,6 +128,7 @@ document.onkeyup = function (e) {
 			$($displayList[1]).show()
 			$($displayList[3]).show()
 			$($displayList[4]).show()
+			$(".qrcode").hide()
 		}
 	}
 };

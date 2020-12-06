@@ -35,6 +35,18 @@ h1 {
     bottom: 3%;
 }
 
+.qrcode {
+  font-family: Cursive;
+  font-size: 1.5em;
+  font-weight: 900;
+  position: fixed;
+  left: 3%;
+  /* background-image: url(../res/code.jpg); */
+  bottom: 1%;
+  width: 10rem;
+  display: none;
+}
+
 .display {
   font-size: 11em;
   font-weight: 900;
