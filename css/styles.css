@@ -40,9 +40,9 @@ h1 {
   font-size: 1.5em;
   font-weight: 900;
   position: fixed;
-  left: 3%;
+  right: 3%;
   /* background-image: url(../res/code.jpg); */
-  bottom: 1%;
+  top: 3%;
   width: 10rem;
   display: none;
 }
